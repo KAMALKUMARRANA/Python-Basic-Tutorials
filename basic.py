@@ -325,8 +325,72 @@ l=[30,40,60]
 s.update(l)
 print(s)
 
-# Function----------------------------------->
+# Dictionary------------------------>mutable, unordered, key-value pair, {},key is unique
+a={"name":'python',
+   "fees":8000,
+   "duration":"2month"
+}
+print(a)
+print(a["fees"])
+for i in a:
+    print(a[i])
 
+# Function-->
+a={"name":'python',
+   "fees":8000,
+   "duration":"2month"
+}
+print(a.get('name'))
+for i in a.keys():
+    print(i)
+for i in a.values():
+    print(i)
+for i,j in a.items():
+    print(i,j)
+    
+a={"name":'python',
+   "fees":8000,
+   "duration":"2month"
+}
+
+del a["fees"] # keyword
+print(a)
+
+p=a.pop("duration")
+print(p)
+print(a)
+
+d=dict(name='python',fess=8000,duration='2 month')
+print(d)
+d.update({'fess':1000})
+print(d)
+
+d['des']="This is python"
+d['fess']=12000
+print(d)
+d.clear()
+print(d)
+
+# nested dictionary---------->
+course={
+    'php':{ 'fess': 8000, 'duration': '2 month'},
+    'java': {'fess': 8000, 'duration': '2 month'},
+    'python':{'fess': 8000, 'duration': '2 month'}
+}
+print(course)
+course['java']['fess']=20000
+print(course['php']['fess'])
+
+for a,b in course.items():
+    print(a,b['duration'],b['fess'])
+
+
+# Function in Python--------------------------------------------------------------------------->
+
+def show():
+    print("Python")
+show()
+show()
 
 # OOP in python-------------------------------------------------------------------------------->
 

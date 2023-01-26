@@ -16,6 +16,13 @@ from module1 import *
 print(sum(100,200))
 print(mul(100,200))
 
+import SortSearch as ss
+#print(dir(SortSearch))
+ss.selection_sort([10,50,70,40,12])
+ss.binary([10,20,40,50], 40)
+
+
+
 # Built-in Module------------>
 
 # Math ---------------->

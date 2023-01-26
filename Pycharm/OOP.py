@@ -26,12 +26,12 @@ class Employee:
             return True
 
 
-# kamal=Employee("Kamal","Rana",50000) #---->object
-# #print(Employee.no_of_emp)
-
+kamal=Employee("Kamal","Rana",50000) #---->object
 #print(Employee.no_of_emp)
-#print(kamal.__dict__)
-#print(Employee.__dict__)
+
+print(Employee.no_of_emp)
+print(kamal.__dict__)
+print(Employee.__dict__)
 #kamal.increment()
 
 # print(kamal.fn,kamal.sal)

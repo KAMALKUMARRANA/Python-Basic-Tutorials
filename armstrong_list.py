@@ -6,7 +6,7 @@ def armstrong(n):
 		sum=sum+rem**len(str(num))
 		n=n//10
 	if num==sum:
-		print(num)
+		print(num,end=" ")
 	
 
 n=int(input("Enter the total number of element: "))

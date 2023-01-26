@@ -8,7 +8,7 @@ print(name.replace("Kumar","Rana"))
 print(name.replace("K","R"))
 print("K" in name)
 
-#operators-->
+#operators------------------------------->
 # Arithmetric +,-,/,//,*,**,%
 print(5+1)
 print(5//2)

@@ -5,7 +5,7 @@ class Fibonacci:
 		s=1
 		i=0
 		print(f"fibo upto {n}: ")
-		if f==1:	
+		if f==1:
 			print(f)
 		else:
 			for i in range(1,n+1):
@@ -19,5 +19,5 @@ class Fibonacci:
 		
 		
 		
-fibo1=Fibonacci(10)
+fibo1=Fibonacci(100)
 

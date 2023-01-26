@@ -15,6 +15,7 @@ def palindrom(n):
     else:
         # print(num,"is not Palindrom!")
         return 0
+
     
 for i in range(1,150):
     if(palindrom(i)):
