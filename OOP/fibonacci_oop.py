@@ -8,12 +8,12 @@ class Fibonacci:
 		if f==1:	
 			print(f)
 		else:
-			while n>i:
-				print(f)
+			for i in range(1,n+1):
+				print(f,end=" ")
 				sum=f+s
 				f=s
 				s=sum
-				i=i+1
+				
 		
 	
 		
