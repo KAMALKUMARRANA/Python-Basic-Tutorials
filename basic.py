@@ -293,3 +293,168 @@ print(max(t))
 print(sum(t))
 print(t.count(20))
 print(t.index(70))
+
+# sets------------------------------------------->immutable, unorder,unindex,{} or set()
+s={10,20,30,20,10}
+print(s)
+for a in s:
+    print(a)
+    
+# Function------------->
+l=[10,20,30,50,60,20,60]
+s=set(l)
+print(s,l)
+
+s.add(100)
+print(s)
+
+print(s.pop())
+print(s)
+
+s.remove(20)
+print(s)
+
+s.discard(30)
+print(s)
+
+s.clear()
+print(s)
+
+s={10,20,30}
+l=[30,40,60]
+s.update(l)
+print(s)
+
+# Function----------------------------------->
+
+
+# OOP in python-------------------------------------------------------------------------------->
+
+# Class and object:------------------>
+class DemoClass:
+    a=10
+    def sumvalue(self):
+        print(20+30)
+        
+    
+demoobj=DemoClass()
+obj=DemoClass()
+print(demoobj.a)
+print(obj.a)
+obj.sumvalue()
+
+# Method and constructure
+
+class DemoClass:
+    a=10
+    def __init__(self):
+        print("Hello!")
+        
+    def showvalue(self): #instance method
+        print(self.a)
+        self.c=self.a*self.a
+        print(self.a)
+    
+    def sum(self,a,b):
+        print(a+b)
+        
+obj=DemoClass() 
+obj.showvalue()
+obj.sum(10,70)
+
+
+# Inheritance--------------------------->
+
+# multilevel
+class A:
+    def displayA(self):
+        print("A class")
+        
+class B(A):
+    def displayB(self):
+        print("B class")
+        
+class C(B):
+    def displayC(self):
+        print("C class")
+    
+
+obj=C()
+obj.displayA()
+obj.displayB()
+obj.displayC()
+
+
+class A:
+    def displayA(self):
+        print("A class")
+        
+class B:
+    def displayA(self):
+        print("B class")
+        
+class C(A,B):
+    def displayC(self):
+        print("C class")
+    
+
+obj=C()
+obj.displayA()
+#obj.displayB()
+obj.displayC()
+
+# Encapsulation----------------------------->
+class Student:
+    def __init__(self):
+        self.__name__="" # Private Variabe
+    def getname(self):
+        return self.__name__
+    def setname(self,name):
+        self.__name__=name
+
+obj=Student()
+obj.setname("Testing")
+name=obj.getname()
+print(name)
+
+class Student:
+    __name="Ravi" # private variable
+    def __init__(self):
+        print(self.__name)
+        self.__display()
+        
+    def __display(self):
+        print("Welcome")
+    
+obj=Student()
+
+# Polymorphism--------------------------------------->
+l=[10,20,30,40]
+print(len(l)) # len() is used function overloading
+s="qwer"
+print(len(s))
+
+class Ws:
+    def display(self,name=" "):
+        print("Welcome to "+name)
+    def sum(self,a,b,c=0):
+        print(a+b+c)
+        
+obj=Ws()
+obj.display()
+
+obj.display("Python")
+obj.sum(10,20,50)
+
+# Overriding
+class A:
+    def display(self):
+        print("A class")
+    
+class B(A):
+    def display(self):
+        print("B class")
+        super().display()
+        
+obj=B()
+obj.display()
