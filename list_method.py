@@ -1,5 +1,6 @@
 a=[1,4,6,7,8,6]
-a.append([10,12])
+a.append("kumar")
+a.extend("kamal")
 print(a)
 #a.clear()
 b=a.copy()

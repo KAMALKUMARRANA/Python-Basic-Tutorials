@@ -1,7 +1,15 @@
-n=input("Enter a string to check: ")
-rev_str=n[-1::-1]
-print(rev_str)
-if n==rev_str:
-	print(n,"is palindrom string")
-else:
-	print(n,"is not palindrom string")
+def check_vowel(str):
+	str=str.lower()
+	char=set("aeiou")
+	for i in str:
+		if i in char:
+			char.remove(i)
+	if len(char)==0:
+		print("Accepted")
+	else:
+		print("Not")
+			
+
+
+n=input("Enter the string: ")
+check_vowel(n)

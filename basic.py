@@ -305,8 +305,7 @@ l=[10,20,30,50,60,20,60]
 s=set(l)
 print(s,l)
 
-s.add(100)
-print(s)
+
 
 print(s.pop())
 print(s)
@@ -318,6 +317,9 @@ s.discard(30)
 print(s)
 
 s.clear()
+print(s)
+
+s[0]=10
 print(s)
 
 s={10,20,30}

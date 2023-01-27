@@ -1,6 +1,7 @@
 def check_vowel(str):
 	str=str.lower()
 	char=set("aeiou")
+	print(char)
 	for i in str:
 		if i in char:
 			char.remove(i)
