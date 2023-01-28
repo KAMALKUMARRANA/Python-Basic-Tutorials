@@ -5,7 +5,10 @@ def selection_sort(list):
 		for j in range(i+1,len(list)):
 			if list[min_index]>list[j]:
 				min_index=j
-		(a[i],a[min_index])=(a[min_index],a[i])
+		# (a[i],a[min_index])=(a[min_index],a[i])
+		temp=list[i]
+		list[i]=list[min_index]
+		list[min_index]=temp
 	print(list)
 			
 
